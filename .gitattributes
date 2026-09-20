@@ -1,0 +1,11 @@
+# Normalize everything to LF in the repository and on checkout, so the
+# package is identical on every platform.
+* text=auto eol=lf
+
+# Legal texts are exempt from ALL conversion. They are reproduced under their
+# upstream terms and NOTICES.md asserts their exact byte counts, so a line
+# ending rewrite on checkout would falsify that claim. It matters most for
+# LICENSE-upstream-defending-code-reference-harness.txt, which is a MODIFIED
+# Apache 2.0 and must stay distinguishable from the canonical text beside it.
+LICENSE          -text
+LICENSE-*.txt    -text
