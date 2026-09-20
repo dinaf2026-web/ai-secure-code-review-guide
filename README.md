@@ -28,7 +28,7 @@ professional assessment before a regulated launch.
 **Status, stated plainly:** this is version 0.1.0.
 
 It has been reviewed adversarially, and it has been used to complete two full
-audits, both on pre-release Android applications, on 20 September 2026. One
+audits, both on real Android codebases, on 20 September 2026. One
 produced four findings and the other six, none critical in either. In one of
 them the review was given an exported launcher activity as a planted false
 positive and correctly declined to report it.
@@ -204,7 +204,10 @@ layer that neither of them has.
   category list, the severity bands, the confidence scale and its 0.7 floor,
   the findings schema, and the hard exclusion rules.
 - **[anthropics/defending-code-reference-harness](https://github.com/anthropics/defending-code-reference-harness)**,
-  Apache 2.0, Copyright 2026 Anthropic PBC. Source of the threat model schema,
+  licensed under a **modified** Apache 2.0, Copyright 2026 Anthropic PBC.
+  GitHub classifies that repository `NOASSERTION`, not `Apache-2.0`, because its
+  LICENSE deviates from the canonical text, including a rewritten indemnification
+  clause in section 9. Source of the threat model schema,
   the interview method, and the pipeline shape. Its four-question framework is
   credited upstream to Shostack, *The Four Question Framework for Threat
   Modeling* (2024). Its autonomous harness is **not** included.
@@ -213,7 +216,13 @@ Original material: the entire Android and Kotlin rule pack, the reporting
 specification, the three-tag provenance model, and the hard rules.
 
 `NOTICES.md` carries the full attribution, the reproduced MIT notice, the
-statement of changes that Apache 2.0 section 4(b) requires, and
-`LICENSE-APACHE-2.0.txt` carries the complete Apache license.
+statement of changes that Apache 2.0 section 4(b) requires, and a diff of the
+three places the second upstream's license departs from canonical Apache 2.0.
+
+Two license files ship and they are **not** interchangeable.
+`LICENSE-upstream-defending-code-reference-harness.txt` is the text that
+upstream actually granted and is the operative license for material taken from
+it. `LICENSE-APACHE-2.0.txt` is the canonical text from apache.org, included
+for comparison only.
 
 Original material is MIT. Copyright 2026 Dina Farhat. See `LICENSE`.

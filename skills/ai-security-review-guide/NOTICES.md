@@ -70,12 +70,42 @@ if this is ever published.
 ## Upstream 2 — defending-code-reference-harness
 
 - Repository: https://github.com/anthropics/defending-code-reference-harness
-- License: **Apache License, Version 2.0**
-- `Copyright 2026 Anthropic PBC`
-- Full license included in [`LICENSE-APACHE-2.0.txt`](LICENSE-APACHE-2.0.txt).
-- Official text: https://www.apache.org/licenses/LICENSE-2.0.txt
-- The repository contains no `NOTICE` file. Confirmed 19-09-2026.
+- License: **a modified Apache License, Version 2.0.** Not the canonical text.
+  GitHub's own license detector classifies the repository as `NOASSERTION`
+  rather than `Apache-2.0` for this reason. Re-verified against the live
+  repository on 20-09-2026.
+- `Copyright 2026 Anthropic PBC`, taken from the filled-in appendix at line 188
+  of that LICENSE file. The canonical template leaves it as
+  `Copyright [yyyy] [name of copyright owner]`.
+- **The license actually granted is shipped verbatim** as
+  [`LICENSE-upstream-defending-code-reference-harness.txt`](LICENSE-upstream-defending-code-reference-harness.txt),
+  byte-identical to what GitHub serves (11,296 bytes). **This is the operative
+  license for the material taken from this upstream.**
+- [`LICENSE-APACHE-2.0.txt`](LICENSE-APACHE-2.0.txt) is the canonical Apache 2.0
+  text from https://www.apache.org/licenses/LICENSE-2.0.txt, byte-identical to
+  the official source (11,358 bytes), and is included **for comparison only**.
+  It is not the license this upstream granted.
+- **Where upstream deviates from canonical Apache 2.0**, diffed 20-09-2026:
+  1. **Section 9, substantive.** Canonical: contributors may accept warranty
+     obligations "and only if You agree to indemnify, defend, and hold each
+     Contributor harmless for any liability incurred by, or claims asserted
+     against, such Contributor". Upstream instead reads "and agree to defend and
+     incur any liability incurred by or on behalf of such Contributor". The
+     obligation is worded differently and should not be assumed equivalent.
+  2. **Section 4 appendix wording.** Canonical "You may add Your own attribution
+     notices ... to the NOTICE text from the Work"; upstream "You may reproduce
+     additional attribution notices ... to the NOTICE text of the Work". Also
+     indented differently.
+  3. **Appendix copyright filled in** rather than left as a placeholder.
+- The repository contains no `NOTICE` file. Re-confirmed 20-09-2026.
 - Upstream states it is not maintained and not accepting contributions.
+
+⛔ **Why both files ship.** Section 4(a) requires giving recipients a copy of
+*this* License, meaning the one actually granted. Shipping only the canonical
+Apache text would hand a recipient a Section 9 that differs from the one
+upstream imposed. An earlier draft of this package did exactly that. Both files
+are now included and their roles are stated, so nobody has to guess which set
+of terms applies.
 
 **What was taken:**
 
@@ -150,10 +180,16 @@ Per the standing skill-repo publishing rule, a public release needs:
 4. This `NOTICES.md` and the full `LICENSE-APACHE-2.0.txt` carried forward intact
 5. A README Credits section naming both upstream repositories
 
-The MIT copyright and permission notice is reproduced above. The complete
-Apache 2.0 license is included in `LICENSE-APACHE-2.0.txt`, downloaded from the
-official Apache source on September 20, 2026. The short notice and link alone
-were not a complete license copy.
+The MIT copyright and permission notice is reproduced above.
+
+Two license files ship, and they are not interchangeable.
+`LICENSE-upstream-defending-code-reference-harness.txt` is the text upstream
+actually granted, copied verbatim from the repository on September 20, 2026, and
+it governs the material taken from that upstream. `LICENSE-APACHE-2.0.txt` is
+the canonical Apache 2.0 text from apache.org, included for comparison so the
+deviations listed under Upstream 2 can be checked. A short notice and a link
+alone are not a complete license copy, and neither is a canonical text
+substituted for a modified one.
 
 Before distribution, verify the applicable upstream notices and retain them.
 Modified files must identify their changes. Including these files does not
