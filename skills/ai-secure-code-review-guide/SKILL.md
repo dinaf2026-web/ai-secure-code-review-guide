@@ -1,5 +1,5 @@
 ---
-name: ai-security-review-guide
+name: ai-secure-code-review-guide
 description: Guide an AI-led source-code security review, threat model, finding triage, or review report. This is an instruction guide, not an executable scanner, penetration-testing tool, or security certification. Includes Android and Kotlin guidance. Use for reviewing code for vulnerabilities or assessing pending changes. Not for general code quality or Claude Code configuration reviews.
 ---
 

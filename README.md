@@ -126,7 +126,7 @@ threat-model --> scan --> triage --> report
 
 ## What is inside
 
-`skills/ai-security-review-guide/SKILL.md` is a lean router. The weight sits in
+`skills/ai-secure-code-review-guide/SKILL.md` is a lean router. The weight sits in
 `references/`, loaded on demand rather than all at once.
 
 | File | Covers |
@@ -161,7 +161,7 @@ are carved out of the Markdown exclusion.
 Settings, then Add marketplace, then paste this repository URL, then Sync, then
 Install.
 
-**Manually:** copy `skills/ai-security-review-guide/` into `~/.claude/skills/`.
+**Manually:** copy `skills/ai-secure-code-review-guide/` into `~/.claude/skills/`.
 
 No dependencies. There is nothing to build and nothing to run.
 

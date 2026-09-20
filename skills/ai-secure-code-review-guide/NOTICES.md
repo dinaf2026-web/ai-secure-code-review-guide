@@ -1,6 +1,8 @@
 # Credits and licensing
 
-`ai-security-review-guide` (formerly `appsec-audit`) is a derivative work. It combines material from two Anthropic
+`ai-secure-code-review-guide` is a derivative work. It was built as
+`appsec-audit`, renamed to `ai-security-review-guide`, and renamed again to its
+current name on 20 September 2026. It combines material from two Anthropic
 open-source reference implementations with an Android/Kotlin rule pack and a
 reporting layer written for this package.
 
