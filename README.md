@@ -25,9 +25,23 @@ It reads source. It does not run the app, fuzz it, or touch a live endpoint. It
 cannot prove the absence of a vulnerability, and it does not replace a
 professional assessment before a regulated launch.
 
-**Status, stated plainly:** this is version 0.1.0. It has been reviewed
-adversarially but it has not yet been used to complete a security review of a
-shipped application. Treat it as a method, not as a track record.
+**Status, stated plainly:** this is version 0.1.0.
+
+It has been reviewed adversarially, and it has been used to complete two full
+audits, both on pre-release Android applications, on 20 September 2026. One
+produced four findings and the other six, none critical in either. In one of
+them the review was given an exported launcher activity as a planted false
+positive and correctly declined to report it.
+
+What has **not** been exercised: `diff` mode and `patch` mode have never been
+run against a real repository. `patch` is the only mode that writes code. Four
+rules in the Android rule pack ship marked `NEEDS-CHECK` and want a live
+documentation lookup before any finding rests on them: the API level at which
+`RECEIVER_EXPORTED` is enforced, the applicability of `MODE_WORLD_READABLE` and
+`MODE_WORLD_WRITEABLE`, v1-only signing exposure against `minSdk`, and any
+dependency advisory.
+
+Treat it as a method with two runs behind it, not as a track record.
 
 ---
 
