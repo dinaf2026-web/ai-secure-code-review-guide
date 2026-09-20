@@ -1,0 +1,13 @@
+{
+  "name": "dina-skills",
+  "owner": {
+    "name": "Dina Farhat"
+  },
+  "plugins": [
+    {
+      "name": "ai-security-review-guide",
+      "source": "./",
+      "description": "AI-led source-code security review as a Claude skill. Threat model, review, triage, and report, with a diff mode for pending changes and an Android and Kotlin rule pack. An instruction guide, not a scanner."
+    }
+  ]
+}

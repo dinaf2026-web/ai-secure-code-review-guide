@@ -1,0 +1,22 @@
+{
+  "name": "ai-security-review-guide",
+  "version": "0.1.0",
+  "description": "Guide an AI-led source-code security review: threat model, review, triage, report, plus a diff mode for pending changes. This is an instruction guide, not an executable scanner, penetration test, or security certification. Language-agnostic core with a deep Android and Kotlin rule pack covering manifest and exported components, intents and PendingIntent, WebView, data at rest, network and crypto, logging and leakage, auth and biometrics, build and signing, and Play policy. Built on two Anthropic reference implementations, with secrets-on-disk reporting deliberately re-enabled and every finding carrying its provenance tag into the report.",
+  "author": "Dina Farhat",
+  "homepage": "https://github.com/dinaf2026-web/ai-security-review-guide",
+  "repository": "https://github.com/dinaf2026-web/ai-security-review-guide",
+  "license": "MIT",
+  "keywords": [
+    "security-review",
+    "code-review",
+    "threat-modeling",
+    "appsec",
+    "vulnerability-triage",
+    "android",
+    "kotlin",
+    "mobile-security",
+    "secrets-detection",
+    "owasp",
+    "claude-skill"
+  ]
+}

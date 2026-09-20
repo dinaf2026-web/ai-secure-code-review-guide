@@ -1,0 +1,31 @@
+# NEVER commit audit output or target source.
+# This repository is a review guide. Findings, threat models and reports
+# describe real vulnerabilities in real applications and are confidential
+# until fixed. A published finding is a published exploit.
+FINDINGS.json
+FINDINGS.md
+TRIAGE.json
+THREAT_MODEL.md
+findings/
+triage/
+reports/
+target/
+*.xlsx
+*.xlsm
+*.docx
+*.pdf
+*.csv
+
+# Keystores, signing material and anything key-shaped
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+.env
+secrets.env
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
