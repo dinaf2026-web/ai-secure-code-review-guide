@@ -158,8 +158,19 @@ are carved out of the Markdown exclusion.
 
 **Claude Code or Cowork, via the marketplace:**
 
-Settings, then Add marketplace, then paste this repository URL, then Sync, then
-Install.
+This plugin is listed in the `dina-skills` marketplace. Add that catalog once
+and this plugin, plus anything added to it later, becomes installable:
+
+```
+/plugin marketplace add dinaf2026-web/dina-skills
+/plugin install ai-secure-code-review-guide@dina-skills
+```
+
+Or in the UI: Settings, then Add marketplace, then paste
+`https://github.com/dinaf2026-web/dina-skills`, then Sync, then Install.
+
+This repository is the plugin itself and is not a marketplace, so adding this
+URL as a marketplace will not work.
 
 **Manually:** copy `skills/ai-secure-code-review-guide/` into `~/.claude/skills/`.
 
